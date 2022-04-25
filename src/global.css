@@ -1,0 +1,19 @@
+.leaflet-container {
+    width: 50%;
+    height: 50vh;
+}
+
+.layout-container {
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.first-section-container {
+    display: flex;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
