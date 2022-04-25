@@ -9,10 +9,10 @@ import { setCacheNameDetails, skipWaiting, clientsClaim } from 'workbox-core';
 import {ExpirationPlugin} from 'workbox-expiration';
 import {BASE_HOSTNAME} from "./constants";
 
-// precacheAndRoute(self.__WB_MANIFEST  || [], {
-//     directoryIndex: null,
-//     cleanUrls: false,
-// });
+precacheAndRoute(self.__WB_MANIFEST  || [], {
+    directoryIndex: null,
+    cleanUrls: false,
+});
 
 setCacheNameDetails({
     prefix: 'covid-tracker-cache',
