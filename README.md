@@ -6,10 +6,10 @@
 - visit `http://localhost:8080/`
 
 
-## preview app
+## Preview app
 https://rad-tulumba-598e3c.netlify.app/
 
-##Building for production
+## Building for production
 - npm run build
 
 ## Notes
