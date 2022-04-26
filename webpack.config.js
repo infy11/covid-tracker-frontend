@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const { InjectManifest } = require('workbox-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 
 module.exports = {
@@ -41,6 +42,9 @@ module.exports = {
       swDest: path.resolve( path.join(__dirname, 'dist'), 'service-worker.js'),
       maximumFileSizeToCacheInBytes: 50000000,
       include: [/\.css$/, /\.js$/],
+    }),
+    new HtmlWebpackPlugin({
+      title: "Covid Tracker",
     }),
   ],
   devServer: {
