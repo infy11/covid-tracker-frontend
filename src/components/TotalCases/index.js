@@ -14,28 +14,28 @@ function TotalCases({ data }) {
     <div className="total-cases-wrapper">
       <div className="total-cases-heading"> Corona Tracker</div>
       <Row gutter={10}>
-        <Col className="gutter-row" span={6}>
+        <Col className="gutter-row" xl={6} xm={6} xs={12}>
           <CaseCard
             title="Total Active"
             description={numberWithCommas(totalActive)}
             img="https://img.icons8.com/external-wanicon-lineal-color-wanicon/512/000000/external-bed-virus-mutation-wanicon-lineal-color-wanicon.png"
           />
         </Col>
-        <Col className="gutter-row" span={6}>
+        <Col className="gutter-row" xl={6}  xm={6} xs={12}>
           <CaseCard
             title="Total Cured"
             description={numberWithCommas(totalCured)}
             img="https://img.icons8.com/external-wanicon-lineal-color-wanicon/512/000000/external-immunity-virus-mutation-wanicon-lineal-color-wanicon.png"
           />
         </Col>
-        <Col className="gutter-row" span={6}>
+        <Col className="gutter-row" xl={6}  xm={6} xs={12} >
           <CaseCard
             title="Total Positive"
             description={numberWithCommas(totalPositive)}
             img="https://img.icons8.com/external-wanicon-lineal-color-wanicon/512/000000/external-bed-virus-mutation-wanicon-lineal-color-wanicon.png"
           />
         </Col>
-        <Col className="gutter-row" span={6}>
+        <Col className="gutter-row" xl={6}  xm={6} xs={12}>
           <CaseCard
             title="Total Death"
             description={numberWithCommas(totalDeath)}

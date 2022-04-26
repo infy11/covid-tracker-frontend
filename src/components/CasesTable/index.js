@@ -13,12 +13,6 @@ const columns = [
     {
         title: 'state name',
         dataIndex: 'state_name',
-        filters: getSearchFilters(),
-        filterSearch: true,
-        onFilter: (value, record) =>{
-            console.log('record', record);
-            return [];
-        },
         width: '30%',
     },
 
@@ -44,7 +38,6 @@ const columns = [
 
 
 function CasesTable({data}) {
-    console.log('getsearch filters', getSearchFilters());
 
     return (
         <div className="cases-table-wrapper">

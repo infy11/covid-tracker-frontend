@@ -4,7 +4,6 @@ import refreshIcon from '../../images/refresh-icon.svg';
 
 function Header({getData}) {
     const handleOnClick = () => {
-        console.log('handle on click called');
         getData();
     }
    return  <div className='header'>
