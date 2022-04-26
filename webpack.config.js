@@ -45,6 +45,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: "Covid Tracker",
+      template: path.resolve('src/index.html'),
+      filename: path.resolve('dist/index.html'),
     }),
   ],
   devServer: {
